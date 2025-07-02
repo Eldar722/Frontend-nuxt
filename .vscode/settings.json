@@ -1,0 +1,44 @@
+{
+  "css.validate": false,
+  "editor.quickSuggestions": {
+    "strings": true,
+    "comments": "on"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["class\\s*=\\s*\"([^\"]*)", 1],
+    ["class:\\s*'([^']*)", 1],
+    ["class:\\s*\"([^\"]*)", 1],
+    ["tw`([^`]*)", 1],
+    ["tw=\"([^\"]*)", 1],
+    ["tw='([^']*)", 1],
+    ["className=\"([^\"]*)", 1],
+    ["className='([^']*)", 1]
+  ],
+  "tailwindCSS.includeLanguages": {
+    "vue": "html",
+    "javascript": "javascript",
+    "typescript": "javascript"
+  },
+  "git.autofetch": true,
+  "editor.fontSize": 16,
+  "files.autoSave": "afterDelay",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.py": "default"
+  },
+  "python.autoComplete.extraPaths": [
+    "C:/path/to/your/project"
+  ],
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "explorer.confirmDelete": false,
+  "chat.commandCenter.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "volar.takeOverMode.enabled": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
