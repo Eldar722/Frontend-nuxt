@@ -8,4 +8,12 @@ export default defineNuxtConfig({
     'normalize.css',
     '@/assets/styles/style.css'
   ],
+
+  ssr: true,
+  app: {
+    baseURL: '/Frontend-nuxt/',
+  },
+  nitro: {
+    preset: 'static'
+  }
 })

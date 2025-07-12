@@ -7,11 +7,15 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "nuxi generate && gh-pages -d .output/public"
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
     "normalize.css": "^8.0.1",
     "nuxt": "^3.17.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

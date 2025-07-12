@@ -18,20 +18,20 @@
                 </div>
                 <div class="four-cards">
                     <article class="base-card">
-                        <span class="card-title">Постоянная усталость</span>
-                        <span class="card-subtitle">С утра уже нет сил, а к вечеру вообще не хочется ничего.</span>
+                        <span class="card-title custom">Постоянная усталость</span>
+                        <span class="card-subtitle custom">С утра уже нет сил, а к вечеру вообще не хочется ничего.</span>
                     </article>
                     <article class="base-card">
-                        <span class="card-title">Частые простуды</span>
-                        <span class="card-subtitle">Каждый сквозняк — как вызов. Болеть стало слишком привычно.</span>
+                        <span class="card-title custom">Частые простуды</span>
+                        <span class="card-subtitle custom">Каждый сквозняк — как вызов. Болеть стало слишком привычно.</span>
                     </article>
                     <article class="base-card">
-                        <span class="card-title">Сложно выбрать витамины</span>
-                        <span class="card-subtitle">Всё кажется нужным, но что именно подойдёт — непонятно.</span>
+                        <span class="card-title custom">Сложно выбрать витамины</span>
+                        <span class="card-subtitle custom">Всё кажется нужным, но что именно подойдёт — непонятно.</span>
                     </article>
                     <article class="base-card">
-                        <span class="card-title">Нет времени разбираться</span>
-                        <span class="card-subtitle">На чтение составов, дозировок и формул просто нет ресурса.</span>
+                        <span class="card-title custom">Нет времени разбираться</span>
+                        <span class="card-subtitle custom">На чтение составов, дозировок и формул просто нет ресурса.</span>
                     </article>
                 </div>
             </div>
@@ -300,7 +300,7 @@
                             <span class="page-title">Готовы начать путь к результату?</span>
                             <span class="page-subtitle">Получите бесплатную консультацию — и мы поможем вам сделать первый шаг</span>
                         </div>
-                        <button class="btn green">Записаться на консультацию</button>
+                        <button class="btn green custom">Записаться на консультацию</button>
                     </div>
                     <div class="doctor-pict">
                         <img :src="doctor" alt="doctor">

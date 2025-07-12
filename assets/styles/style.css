@@ -29,7 +29,7 @@ body {
     min-height: 100vh;
 }
 
-.container {
+section .container {
     margin: 250px auto;
     max-width: 1420px;
 }
@@ -41,28 +41,30 @@ body {
 
 /* button animation */
 
-.btn.orange, 
-.btn.green, 
+.hero-block .btn.orange,
+.title-button .btn.orange, 
+.btn.green.custom, 
 .btn-orange-cta, 
-.btn.btn-success,
+.container-for-header .btn.btn-success,
 .choose-tariff {
     transition: ease-in-out 0.3s;
 }
 
-.btn.orange:hover, 
-.btn.green:hover, 
+.hero-block .btn.orange:hover,
+.title-button .btn.orange:hover, 
+.btn.green.custom:hover, 
 .btn-orange-cta:hover, 
-.btn.btn-success:hover, 
+.container-for-header .btn.btn-success:hover, 
 .choose-tariff:hover {
     transform: translateY(-1px);
     box-shadow: 0 8px 8px rgba(0,0,0,0.15);;
 }
 
-.btn.orange:hover, .btn-orange-cta:hover, .choose-tariff:hover {
+.hero-block .btn.orange:hover, .title-button .btn.orange:hover .btn-orange-cta:hover, .choose-tariff:hover {
     background-color: var(--orangehover);
 }
 
-.btn.green:hover, .btn.btn-success:hover {
+.btn.green.custom:hover, .container-for-header .btn.btn-success:hover {
     background-color: var(--greenhover);
 }
 
@@ -103,7 +105,7 @@ body {
     gap: 40px;
 }
 
-.nav-link {
+.nav .nav-link {
     text-decoration: none;
     color: var(--dark);
     font-size: 20px;
@@ -122,8 +124,7 @@ body {
     padding: 15px 25px;
     transition: 0.3s ease-in-out;
 }
-
-.nav-link:hover, .nav-link:focus {
+.nav .nav-link:hover, .nav .nav-link:focus {
     color: var(--green);
 }
 
@@ -259,7 +260,7 @@ body {
     flex-direction: column;
 }
 
-.btn.orange {
+.hero-block .btn.orange, .title-button .btn.orange {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,7 +275,12 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.btn.orange:active, .btn.orange:focus, .btn.orange:focus {
+.hero-block .btn.orange:active,
+.hero-block .btn.orange:focus, 
+.hero-block .btn.orange:focus, 
+.title-button .btn.orange:active,
+.title-button .btn.orange:focus, 
+.title-button .btn.orange:focus {
     color: var(--white) !important;
     background-color: var(--orange) !important;
 }
@@ -312,7 +318,7 @@ body {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.card-title {
+.card-title.custom {
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 16px;
@@ -323,7 +329,7 @@ body {
     font-size: 24px;
 }
 
-.card-title, .card-subtitle {
+.card-title.custom , .card-subtitle {
     text-align: center;
     color: var(--dark);
 }
@@ -384,7 +390,7 @@ body {
     text-align: center;
 }
 
-.mini-card-title, .card-subtitle {
+.mini-card-title, .mini-card-subtitle {
     text-align: center;
     color: var(--dark);
 }
@@ -685,20 +691,20 @@ body {
     align-items: center;
 }
 
-.carousel-indicators [data-bs-target] {
+.carousel .carousel-indicators [data-bs-target] {
     background-color: var(--ligthgreen);
 }
 
-.carousel-indicators .active {
+.carousel .carousel-indicators .active {
     background-color: var(--dark);
 }
 
-.carousel-indicators {
+.carousel .carousel-indicators {
     bottom: -60px;
 }
 
-.carousel-control-next-icon, 
-.carousel-control-prev-icon {
+.carousel .carousel-control-next-icon, 
+.carousel .carousel-control-prev-icon {
     filter: invert(100%);
 }
 
@@ -774,7 +780,7 @@ body {
 
 /* final cta */
 
-.btn.green {
+.title-button .btn.green {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -789,15 +795,10 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.btn.green:active, .btn.green:focus, .btn.green:focus, .btn.green:hover{
+.title-button .btn.green:active, .title-button .btn.green:focus, .title-button .btn.green:focus, .title-button .btn.green:hover{
     color: var(--white) !important;
     background-color: var(--greenhover) !important;
 }
-
-.btn.green:hover {
-    
-}
-
 .doctor-pict img {
     width: 586px;
     height: 686px;
