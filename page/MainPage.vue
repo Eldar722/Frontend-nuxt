@@ -1,13 +1,15 @@
 <template>
     <main>
         <section class="hero">
-            <div class="hero-block">
-                <span class="hero-title">Живи на полной!</span>
-                <span class="hero-subtitle">Эксклюзивно для новых клиентов: пробный набор Vitax с 20% скидкой. Попробуй и почувствуй разницу!</span>
-                <button type="button" class="btn orange">Начать с персональной скидкой</button>
-            </div>
-            <div class="hero-image">
-                <img :src="pills" alt="pills">
+            <div class="container">
+                <div class="hero-block">
+                    <span class="hero-title">Живи на полной!</span>
+                    <span class="hero-subtitle">Эксклюзивно для новых клиентов: пробный набор Vitax с 20% скидкой. Попробуй и почувствуй разницу!</span>
+                    <button type="button" class="btn orange" @click="showPopup = true">Начать с персональной скидкой</button>
+                </div>
+                <div class="hero-image">
+                    <img :src="pills" alt="pills">
+                </div>
             </div>
         </section>
         <section class="solve-problem">
@@ -39,22 +41,22 @@
         <section class="choose-vitax">
             <div class="container">
                 <div class="title-cards">
-                    <span class="page-title">Почему выбирают Vitax?</span>
+                    <span class="page-title">Преимущества Vitax</span>
                     <div class="cards-image">
                         <div class="mini-four-cards">
-                            <article class="mini-base-card">
+                            <article class="mini-base-card green">
                                 <span class="mini-card-title">Энергия без кофе</span>
                                 <span class="mini-card-subtitle">Поддержка бодрости и концентрации без перегрузок и кофеина.</span>
                             </article>
-                            <article class="mini-base-card">
+                            <article class="mini-base-card blue">
                                 <span class="mini-card-title">Сильный иммунитет</span>
                                 <span class="mini-card-subtitle">Комплекс с витаминами, который помогает не выпадать из жизни.</span>
                             </article>
-                            <article class="mini-base-card">
+                            <article class="mini-base-card purple">
                                 <span class="mini-card-title">Подбор под твои задачи</span>
                                 <span class="mini-card-subtitle">Точный набор под твой ритм: для фокуса, сна, восстановления или снижения стресса.</span>
                             </article>
-                            <article class="mini-base-card">
+                            <article class="mini-base-card orange">
                                 <span class="mini-card-title">Готовое решение</span>
                                 <span class="mini-card-subtitle">Всё собрано за тебя. Просто начни — и почувствуй разницу.</span>
                             </article>
@@ -140,22 +142,22 @@
                 <div class="title-cards">
                     <span class="page-title">Почему Vitax действительно помогает</span>
                     <div class="cards-icon">
-                        <div class="card-w-icon">
+                        <div class="card-w-icon green">
                             <img :src="dna" alt="dna" class="icon">
                             <span class="icon-card-title">Основано на науке</span>
                             <span class="icon-card-subtitle">Никаких волшебных обещаний — только витамины с доказанной эффективностью.</span>
                         </div>
-                        <div class="card-w-icon">
+                        <div class="card-w-icon blue">
                             <img :src="hit" alt="hit" class="icon">
                             <span class="icon-card-title">Персонализированный подход</span>
                             <span class="icon-card-subtitle">Комплексы подбираются под твои цели: энергия, фокус, иммунитет и не только.</span>
                         </div>
-                        <div class="card-w-icon">
+                        <div class="card-w-icon purple">
                             <img :src="box" alt="box" class="icon">
                             <span class="icon-card-title">Максимум пользы — минимум лишнего</span>
                             <span class="icon-card-subtitle">Никаких 5 баночек в день. Всё, что нужно, уже собрано.</span>
                         </div>
-                        <div class="card-w-icon">
+                        <div class="card-w-icon orange">
                             <img :src="thunder" alt="thunder" class="icon">
                             <span class="icon-card-title">Эффект, который ощущается</span>
                             <span class="icon-card-subtitle">Витамины, которые действительно работают — ты почувствуешь разницу.</span>
@@ -198,23 +200,23 @@
                             <div class="card-tariff">
                                 <span class="card-tariff-title">Старт</span>
                                 <span class="card-tariff-subtitle">Базовый уход и поддержка</span>
-                                <span class="card-tariff-cons">Список преимуществ:</span>
-                                <div class="tariff-cons-of-card">
-                                    <div class="icon-cons">
+                                <span class="card-tariff-pros">Список преимуществ:</span>
+                                <div class="tariff-pros-of-card">
+                                    <div class="icon-pros">
                                         <img :src="magnifier" alt="magnifier" class="tariff-icon">
-                                        <span class="cons">Индивидуальный опрос</span>
+                                        <span class="pros">Индивидуальный опрос</span>
                                     </div>
-                                    <div class="icon-cons">
+                                    <div class="icon-pros">
                                         <img :src="pill" alt="pill" class="tariff-icon">
-                                        <span class="cons">Комплекс на 1 меcяц</span>
+                                        <span class="pros">Комплекс на 1 меcяц</span>
                                     </div>
-                                    <div class="icon-cons">
+                                    <div class="icon-pros">
                                         <img :src="pack" alt="pack" class="tariff-icon">
-                                        <span class="cons">Бесплатная доставка</span>
+                                        <span class="pros">Бесплатная доставка</span>
                                     </div>
-                                    <div class="icon-cons">
+                                    <div class="icon-pros">
                                         <img :src="call" alt="call" class="tariff-icon">
-                                        <span class="cons">Поддержка по e-mail</span>
+                                        <span class="pros">Поддержка по e-mail</span>
                                     </div>
                                 </div>
                                 <span class="card-tariff-price">Цена: от 4 990 &#8376;</span>
@@ -227,23 +229,23 @@
                             <div class="card-tariff">
                                 <span class="card-tariff-title">Оптимум</span>
                                 <span class="card-tariff-subtitle">Энергия, иммунитет и восстановление</span>
-                                <span class="card-tariff-cons">Список преимуществ:</span>
-                                <div class="tariff-cons-of-card">
-                                    <div class="icon-cons">
+                                <span class="card-tariff-pros">Список преимуществ:</span>
+                                <div class="tariff-pros-of-card">
+                                    <div class="icon-pros">
                                         <img :src="DNA" alt="DNA" class="tariff-icon">
-                                        <span class="cons">Подбор комплекса под цель</span>
+                                        <span class="pros">Подбор комплекса под цель</span>
                                     </div>
-                                    <div class="icon-cons">
+                                    <div class="icon-pros">
                                         <img :src="bag" alt="bag" class="tariff-icon">
-                                        <span class="cons">Комплекс на 2 месяца</span>
+                                        <span class="pros">Комплекс на 2 месяца</span>
                                     </div>
-                                    <div class="icon-cons">
+                                    <div class="icon-pros">
                                         <img :src="truck" alt="truck" class="tariff-icon">
-                                        <span class="cons">Экспресс-доставка</span>
+                                        <span class="pros">Экспресс-доставка</span>
                                     </div>
-                                    <div class="icon-cons">
+                                    <div class="icon-pros">
                                         <img :src="call" alt="call" class="tariff-icon">
-                                        <span class="cons">Личная поддержка в чате</span>
+                                        <span class="pros">Личная поддержка в чате</span>
                                     </div>
                                 </div>
                                 <span class="card-tariff-price">Цена: от 9 990 &#8376;</span>
@@ -256,23 +258,23 @@
                             <div class="card-tariff">
                             <span class="card-tariff-title">Про</span>
                             <span class="card-tariff-subtitle">Максимум заботы и результатов</span>
-                            <span class="card-tariff-cons">Список преимуществ:</span>
-                            <div class="tariff-cons-of-card">
-                                <div class="icon-cons">
+                            <span class="card-tariff-pros">Список преимуществ:</span>
+                            <div class="tariff-pros-of-card">
+                                <div class="icon-pros">
                                     <img :src="doctorsvg" alt="doctor" class="tariff-icon">
-                                    <span class="cons">Консультация со специалистом</span>
+                                    <span class="pros">Консультация со специалистом</span>
                                 </div>
-                                <div class="icon-cons">
+                                <div class="icon-pros">
                                     <img :src="pack" alt="pack" class="tariff-icon">
-                                    <span class="cons">Курсовая схема на 3 месяца</span>
+                                    <span class="pros">Курсовая схема на 3 месяца</span>
                                 </div>
-                                <div class="icon-cons">
+                                <div class="icon-pros">
                                     <img :src="bar" alt="bar" class="tariff-icon">
-                                    <span class="cons">Отчёт по результатам</span>
+                                    <span class="pros">Отчёт по результатам</span>
                                 </div>
-                                <div class="icon-cons">
+                                <div class="icon-pros">
                                     <img :src="gift" alt="gift" class="tariff-icon">
-                                    <span class="cons">Подарки и бонусы внутри</span>
+                                    <span class="pros">Подарки и бонусы внутри</span>
                                 </div>
                             </div>
                                 <span class="card-tariff-price">Цена: от 17 990 &#8376;</span>
@@ -308,12 +310,166 @@
                 </div>
             </div>
         </section>
+
+        <section class="solve-the-problem">
+            <div class="container">
+                <div class="title-image">
+                    <div class="title-subtitle-v2">
+                        <span class="title-page">Какую проблему мы решаем?</span>
+                        <span class="subtitle-page">Мы понимаем ваши ежедневные вызовы и предлагаем эффективные решения</span>
+                    </div>
+                    <div class="image">
+                        <img :src="sleep" alt="sleep">
+                    </div>
+                </div>
+                <div class="seven-cards">
+                    <div class="upper-cards">
+                        <div class="cards green">
+                            <div class="vertical green">
+                                <span class="vertical-text">VITAX</span>
+                            </div>
+                            <div class="percentage green">
+                                <span class="percentage-text">87%</span>
+                            </div>
+                            <div class="card-title-subtitle">
+                                <span class="title-in-card">Постоянная усталость</span>
+                                <span class="subtitle-in-card">С утра уже нет сил, а к вечеру вообще не хочется ничего.</span>
+                            </div>
+                            <div class="opinions">
+                                <span class="opinions-text">2.3K+ людей</span>
+                            </div>
+                            <div class="more-pop-up green">
+                                <span class="more-text">Подробнее</span>
+                            </div>
+                        </div>
+                        <div class="cards blue">
+                            <div class="vertical blue">
+                                <span class="vertical-text">VITAX</span>
+                            </div>
+                            <div class="percentage blue">
+                                <span class="percentage-text">73%</span>
+                            </div>
+                            <div class="card-title-subtitle">
+                                <span class="title-in-card">Частые простуды</span>
+                                <span class="subtitle-in-card">Каждый сквозняк — как вызов. Болеть стало слишком привычно.</span>
+                            </div>
+                            <div class="opinions">
+                                <span class="opinions-text">1.8K+ людей</span>
+                            </div>
+                            <div class="more-pop-up blue">
+                                <span class="more-text">Подробнее</span>
+                            </div>
+                        </div>
+                        <div class="cards purple">
+                            <div class="vertical purple">
+                                <span class="vertical-text">VITAX</span>
+                            </div>
+                            <div class="percentage purple">
+                                <span class="percentage-text">65%</span>
+                            </div>
+                            <div class="card-title-subtitle">
+                                <span class="title-in-card">Сложный выбор</span>
+                                <span class="subtitle-in-card">Всё кажется нужным, но что именно подойдёт — неизвестно.</span>
+                            </div>
+                            <div class="opinions">
+                                <span class="opinions-text">1.5K+ людей</span>
+                            </div>
+                            <div class="more-pop-up purple">
+                                <span class="more-text">Подробнее</span>
+                            </div>
+                        </div>
+                        <div class="cards orange">
+                            <div class="vertical orange">
+                                <span class="vertical-text">VITAX</span>
+                            </div>
+                            <div class="percentage orange">
+                                <span class="percentage-text">91%</span>
+                            </div>
+                            <div class="card-title-subtitle">
+                                <span class="title-in-card">Нехватка времени</span>
+                                <span class="subtitle-in-card">На чтение составов, дозировок и формул просто нет ресурса.</span>
+                            </div>
+                            <div class="opinions">
+                                <span class="opinions-text">2.7K+ людей</span>
+                            </div>
+                            <div class="more-pop-up orange">
+                                <span class="more-text">Подробнее</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower-cards">
+                        <div class="wide-cards teal">
+                            <div class="vertical teal">
+                                <span class="vertical-text">VITAX</span>
+                            </div>
+                            <div class="percentage teal">
+                                <span class="percentage-text">58%</span>
+                            </div>
+                            <div class="card-title-subtitle">
+                                <span class="title-in-wide-card">Проблемы с сердцем</span>
+                                <span class="subtitle-in-wide-card">Стресс и нагрузки сказываются на работе сердечно-сосудистой системы.</span>
+                            </div>
+                            <div class="opinions">
+                                <span class="opinions-text">1.2K+ людей</span>
+                            </div>
+                            <div class="more-pop-up teal">
+                                <span class="more-text">Подробнее</span>
+                            </div>
+                        </div>
+                        <div class="wide-cards indigo">
+                            <div class="vertical indigo">
+                                <span class="vertical-text">VITAX</span>
+                            </div>
+                            <div class="percentage indigo">
+                                <span class="percentage-text">76%</span>
+                            </div>
+                            <div class="card-title-subtitle">
+                                <span class="title-in-wide-card">Ухудшение памяти</span>
+                                <span class="subtitle-in-wide-card">Забывчивость и рассеянность мешают работе и личной жизни.</span>
+                            </div>
+                            <div class="opinions">
+                                <span class="opinions-text">1.9K+ людей</span>
+                            </div>
+                            <div class="more-pop-up indigo">
+                                <span class="more-text">Подробнее</span>
+                            </div>
+                        </div>
+                        <div class="wide-cards rose">
+                            <div class="vertical rose">
+                                <span class="vertical-text">VITAX</span>
+                            </div>
+                            <div class="percentage rose">
+                                <span class="percentage-text">82%</span>
+                            </div>
+                            <div class="card-title-subtitle">
+                                <span class="title-in-wide-card">Плохой сон</span>
+                                <span class="subtitle-in-wide-card">Долго засыпаю, часто просыпаюсь, утром чувствую себя разбитым</span>
+                            </div>
+                            <div class="opinions">
+                                <span class="opinions-text">2.1K+ людей</span>
+                            </div>
+                            <div class="more-pop-up rose">
+                                <span class="more-text">Подробнее</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <Popup :isOpen="showPopup" @close="showPopup = false" />
 </template>
 
 <script setup>
+import Popup from "@/components/modal.vue";
+import { ref } from "vue";
+
+const showPopup = ref(false)
+
 import pills from "@/assets/images/MainPage/pills.png";
 import sleepy from "@/assets/images/MainPage/sleepy.png";
+import sleep from "@/assets/images/MainPage/sleep.png";
 import runner from "@/assets/images/MainPage/runner.png";
 import hit from "@/assets/images/FourCards/hit.svg";
 import thunder from "@/assets/images/FourCards/thunder.svg";
