@@ -18,7 +18,7 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import pills from "@/assets/images/MainPage/pills.png";
-import Popup from "@/components/Modal.vue";
+import Popup from "~/components/Modal.vue";
 
 const showPopup = ref(false);
 </script>
