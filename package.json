@@ -12,6 +12,14 @@
   "dependencies": {
     "bootstrap": "^5.3.7",
     "normalize.css": "^8.0.1",
-    "nuxt": "^3.17.0"
+    "nuxt": "^3.17.0",
+    "vue3-carousel": "^0.17.0"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "gh-pages": "^6.3.0",
+    "prettier": "^3.7.4"
   }
 }

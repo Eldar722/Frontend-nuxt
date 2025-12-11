@@ -1,10 +1,13 @@
 <template>
-    <article class="base-card">
-        <span class="card-title"></span>
-        <span class="card-subtitle"></span>
-    </article>
+  <article class="base-card">
+    <span class="card-title custom">{{ title }}</span>
+    <span class="card-subtitle custom">{{ subtitle }}</span>
+  </article>
 </template>
 
-<script setup>
-
+<script setup lang="ts">
+defineProps<{
+  title: string;
+  subtitle: string;
+}>();
 </script>

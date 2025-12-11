@@ -3,14 +3,13 @@
     <NuxtRouteAnnouncer />
     <!-- <NuxtWelcome /> -->
     <Header />
-    <MainPage />
+    <NuxtPage />
     <Footer />
 
   </div>
 </template>
 
 <script lang="ts" setup>
-import Header from "@/components/header.vue";
-import MainPage from "./page/MainPage.vue";
-import Footer from "@/components/footer.vue";
+import Header from "~/components/Header.vue";
+import Footer from "~/components/Footer.vue";
 </script>

@@ -13,5 +13,5 @@
 </template>
 
 <script setup>
-import logo from "@/assets/images/MainPage/logo.png";
+import logo from "@/assets/images/MainPage/logo.svg";
 </script>
